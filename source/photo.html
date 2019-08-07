@@ -3,36 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк - Фотографии</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo-image">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="20" alt="Пинк">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="20" alt="Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--active" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Сайт приложения PINK</h1>
       <section class="photo-gallery">
-        <h2 class="photo-gallery__title">Фотографии пользователей</h2>
+        <h2 class="page-main__title">Фотографии пользователей</h2>
         <p class="photo-gallery__text">
           Взгляните на фотографии, которые
           выкладывают пользователи!
@@ -41,7 +40,7 @@
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
             <span class="photo-gallery__achievement">Панорама дня</span>
-            <img src="http://placehold.it/320x137" width="320" height="137" alt="Фото пользователя">
+            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото пользователя">
             <div class="photo-gallery__comment comment">
               <b class="comment__author">Анна</b>
               <span class="comment__publication-time">(5 минут назад)</span>
@@ -56,7 +55,7 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
             <div class="photo-gallery__comment comment">
               <b class="comment__author">Левон</b>
               <span class="comment__publication-time">(5 часов назад)</span>
@@ -69,7 +68,7 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
             <div class="photo-gallery__comment comment">
               <b class="comment__author">Антон</b>
               <span class="comment__publication-time">(12 часов назад)</span>
@@ -81,7 +80,7 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
             <div class="photo-gallery__comment comment">
               <b class="comment__author">Борис</b>
               <span class="comment__publication-time">(20 часов назад)</span>
@@ -94,7 +93,7 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
             <div class="photo-gallery__comment comment">
               <b class="comment__author">Сергей</b>
               <span class="comment__publication-time">(25 часов назад)</span>
@@ -106,7 +105,7 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
             <div class="photo-gallery__comment comment">
               <b class="comment__author">Максим</b>
               <span class="comment__publication-time">(5 минут назад)</span>
@@ -118,7 +117,7 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
             <div class="photo-gallery__comment comment">
               <b class="comment__author">Надежда</b>
               <span class="comment__publication-time">(45 часов назад)</span>
@@ -137,30 +136,32 @@
     </main>
     <footer class="page-footer">
       <a href="index.html" class="page-footer__logo-image">
-        <img class="page-footer__logo-image" src="http://placehold.it/147x40" width="147" height="40" alt="Пинк">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twittr" href="#">Мы в твиттере
-              <img src="http://placehold.it/18x14" width="18" height="14" alt="Twitter">
+              <img src="img/icon-twitter.svg" width="18" height="14" alt="Twitter">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">Мы в фейсбуке
-              <img src="http://placehold.it/9x18" width="9" height="18" alt="Facebook">
+              <img src="img/icon-facebook.svg" width="9" height="18" alt="Facebook">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#">Мы на ютубе
-              <img src="http://placehold.it/15x13" width="15" height="13" alt="Youtube">
+              <img src="img/icon-youtube.svg" width="15" height="13" alt="Youtube">
             </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
