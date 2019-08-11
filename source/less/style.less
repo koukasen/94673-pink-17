@@ -1,3 +1,5 @@
+@import "node_modules/normalize.less/normalize.less";
+@import "variables.less";
 @import "blocks/page-header.less";
 @import "blocks/main-nav.less";
 @import "blocks/site-list.less";
@@ -10,11 +12,25 @@
 @import "blocks/page-footer.less";
 
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
-  background: #f2f2f2;
+  /* background: url("../img/pink-index-mobile.jpg") no-repeat center; */
+  background-size: 320px auto;
+  background-position: 50% 0;
 }
-
+@media (min-width: @tablet-width) {
+  body {
+    /* background: url("../img/pink-index-tablet.jpg") no-repeat center; */
+    background-size: @tablet-width auto;
+  }
+}
+@media (min-width: @desktop-width) {
+  body {
+    /* background: url("../img/pink-index-desktop.jpg") no-repeat center; */
+    background-size: @desktop-width auto;
+  }
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);

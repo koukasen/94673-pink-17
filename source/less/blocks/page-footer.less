@@ -1,4 +1,10 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  /* for setka */
+  min-height: 285px;
+  margin: 0 auto;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -6,4 +12,15 @@
   color: #ffffff;
   background-color: #ffffff;
   outline: 2px dotted red;
+}
+@media (min-width:@tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    min-width: @tablet-width;
+  }
+}
+@media (min-width:@desktop-width) {
+  .page-footer {
+    min-width: @desktop-width;
+  }
 }

@@ -1,4 +1,9 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* for setka */
+  min-height: 325px;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -6,4 +11,18 @@
   color: #ffffff;
   background-color: #283645;
   outline: 2px dotted orange;
+}
+@media (min-width: @tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    /* for setka */
+    min-height: 365px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-nav {
+    /* for setka */
+    min-height: 110px;
+    background-color: rgba(30, 39, 50, 0.3);
+  }
 }

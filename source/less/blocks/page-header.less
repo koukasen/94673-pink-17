@@ -1,9 +1,24 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  background-color: rgba(30, 39, 50, 0.3);
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 32px;
   color: #ffffff;
-  background-color: #1c2530;
   outline: 2px dotted red;
+}
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-direction: row;
+    min-width: @tablet-width;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-header {
+    min-width: @desktop-width;
+  }
 }
